@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+A simple Task Manager application built with React that allows users to add, prioritize, and delete tasks. The application supports light and dark mode toggling for better user experience and integrates a weather widget to display current weather information.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- **Add Tasks**: Users can input a task description and assign a priority (High, Medium, Low).
+- **Delete Tasks**: Remove tasks from the list as needed.
+- **Dark Mode**: Toggle between light and dark modes for a personalized interface.
+- **Weather Widget**: Displays the current weather of the selected city, including temperature, humidity, and wind speed.
+- **User Authentication**: Simple login and signup functionality with username and password.
+- **User Icon**: Displays a user icon and name upon login.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/task-manager.git
+   cd task-manager
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Usage
+1. Open the app in your browser at `http://localhost:3000`.
+2. Sign up using your username and password.
+3. Log in with the credentials you just created.
+4. Add tasks, assign priority, and manage your task list.
+5. Toggle dark mode using the button in the top-right corner.
+6. View current weather information displayed alongside the task list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## File Structure
+```plaintext
+src
+├── components
+│   ├── TaskInput.js        // Input field and controls for adding tasks
+│   ├── TaskList.js         // Displays the list of tasks
+│   ├── Weather.js          // Weather widget
+│
+├── App.js                  // Main application logic
+├── index.js                // Entry point
+├── styles
+│   ├── TaskInput.css       // Styling for TaskInput component
+│   ├── TaskList.css        // Styling for TaskList component
+│   ├── App.css             // Global styles
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dependencies
+- React
+- OpenWeatherMap API (for weather data)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Customization
+1. Update **OpenWeatherMap API Key** in the `Weather` component:
+   ```javascript
+   const API_KEY = 'your_api_key';
+   ```
+2. Customize themes and styles by modifying the respective CSS files.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+This project is licensed under the MIT License. Feel free to use and modify it as per your needs.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+- [React](https://reactjs.org/) for the UI framework.
+- [OpenWeatherMap](https://openweathermap.org/) for weather data API.
+- [Flaticon](https://www.flaticon.com/) for the user icon.
